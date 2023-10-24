@@ -164,16 +164,18 @@ body{
     width: 100%;
     display: block;
 }
-/* testimony */
+
 .testimony{
-    background-color: #e5e5f7;
+    background-color: #ffffff;
 }
+
 .testimony_container{
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     gap: 1em;
     align-items: center;
 }
+
 .testimony_body{
     display: grid;
     grid-template-columns: 1fr max-content;
@@ -185,50 +187,58 @@ body{
     opacity: 0;
     pointer-events: none;
 }
+
 .testimony_body--show{
     pointer-events: unset;
     opacity: 1;
     transition: opacity 1.5s ease-in-out;
 }
+
 .testimony_img{
     width: 250px;
     height: 250px;
-    border-radius:50% ;
+    border-radius: 50%;
     object-fit: cover;
-    object-fit: 50% 30%;
+    object-position: 50% 30%;
 }
+
 .testimony_texts{
     max-width: 700px;
 }
+
 .testimony_course{
-    background-color: royalblue;
-    color: white;
+    background-color: rgb(129, 155, 232);
+    color: #fff;
     display: inline-block;
     padding: 5px;
 }
-.testimony_arrows{
+
+.testimony_arrow{
     width: 90%;
-    cursor: pointer;
+    cursor: pointer;
 }
+
+/* footer */
+
 .footer{
     background-color: #1d293f;
-
 }
 .footer_title{
-    font-weight: 300;
     font-size: 2rem;
-    margin-bottom: 3px;
+    margin-bottom: 30px;
 }
 .footer_title, .footer_info{
-    color: white;
+    color: #fff;
 }
 .footer_container{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #fff;
     padding-bottom: 60px;
+    align-items: center;
+    
 }
+
 .nav--footer{
     padding-bottom: 20px;
     display: flex;
@@ -236,12 +246,11 @@ body{
     grid-auto-flow: row;
     height: 100%;
 }
-.nav_links--footer{
+.nav_link--footer{
     display: flex;
     margin: 0;
     margin-right: 20px;
     flex-wrap: wrap;
-
 }
 .footer_inputs{
     margin-top: 10px;
@@ -249,32 +258,31 @@ body{
     overflow: hidden;
 }
 .footer_input{
-    background-color: white;
+    background-color: #fff;
     height: 50px;
     display: block;
     padding-left: 10px;
     border-radius: 6px;
     font-size: 1rem;
-    outline: none;
-    border: none;
+    outline: none; border: none;
     margin-right: 16px;
 }
 .footer_submit{
     margin-left: auto;
     display: inline-block;
     height: 50px;
-    border: 0 20px;
+    padding: 0 20px;
     background-color: #2091f9;
     border: none;
     font-size: 1rem;
-    color: white;
+    color: #fff;
     border-radius: 6px;
     cursor: pointer;
 }
 .footer_copy{
-    --padding-container:30px 0;
+    --padding-container: 30px 0;
     text-align: center;
-    color: white;
+    color: #fff;
 }
 .footer_copyright{
     font-weight: 300;
