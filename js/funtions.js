@@ -98,7 +98,7 @@ else{
  form_register.addEventListener("submit", event_name => {
    event_name.preventDefault();
    let info= "";
-   if (nombres.value.length <=2 || apellidos.value.length) {
+   if (nombres.value.length <=2 || apellidos.value.length<=2) {
      info+= "Nombres y/o apellidos deben ser mayores a dos letras"
      validation.style.color="red"
    }
@@ -109,3 +109,18 @@ else{
    }
    validation.innerText = info;
  }) 
+
+ function load_page(){
+   document.getElementById("nombres").focus();
+   document.getElementById("apellidos").disable = true;
+ }
+function validate(){
+  // alert ("funciona")
+  let nombres = document.getElementById("nombres").value;
+  console.log(nombres);
+  // .value es un atributo
+
+}
+
+
+// ###########################################################################################################################
