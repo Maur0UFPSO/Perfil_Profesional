@@ -112,6 +112,12 @@ body{
 .about{
     text-align: center;
 }
+#letra_1{
+    color: white;
+}
+#letra_2{
+    color: white;
+}
 .subtitle{
     color: var(--color-title);
     font-size: 2rem;
@@ -141,7 +147,7 @@ body{
     width: 40px;
 }
 .options{
-    background-color: #e5e5f7;
+    background-color: #001a49;
     background-color: linear-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px , #e5e5f7 0.5px);
     background-size: cover;
     background-position: 0 0 , 10px 10px;
